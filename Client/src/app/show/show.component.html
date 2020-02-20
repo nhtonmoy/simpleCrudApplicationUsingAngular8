@@ -1,0 +1,45 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<div class="col-md-6">
+    <h2>All Info</h2>
+    <!-- <ul class="list-group">
+      <table
+        class="list-group-item"
+        *ngFor="let i of info; let i = index"
+        
+      >
+      <tr>
+          <td>{{ i.oname }}</td>
+          <td>{{ i.phone }}</td>
+      </tr>
+        
+      </table>
+    </ul>
+  </div>
+
+  <div>
+    <ag-grid-angular
+      style="width: 500px; height: 500px;" 
+      class="ag-theme-balham"
+      [rowData]="rowData"
+      [columnDefs]="columnDefs">
+    </ag-grid-angular>  -->
+  </div>
+
+  <div class="row">
+    <div class="column" style="background-color: whitesmoke;">
+      NAME
+    </div>
+    <div class="column" style="background-color: rgb(197, 197, 197);">
+      PHONE
+    </div>
+  </div>
+
+<div class="row" *ngFor="let i of info; let i = index">
+  <div class="column" style="background-color:rgb(241, 236, 236);">
+    {{i.oname}}
+  </div>
+  <div class="column" style="background-color:rgb(219, 210, 210);">
+    {{i.phone}}
+  </div>
+</div>
