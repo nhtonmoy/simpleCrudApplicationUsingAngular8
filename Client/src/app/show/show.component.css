@@ -1,3 +1,5 @@
+@import "~ag-grid-community/dist/styles/ag-theme-balham.css";
+
 
 * {
     width: 30em;

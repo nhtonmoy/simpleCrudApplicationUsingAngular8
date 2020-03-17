@@ -1,5 +1,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+    <script src="https://unpkg.com/ag-grid-enterprise@17.1.1/dist/ag-grid-enterprise.min.js"></script>
 <div class="col-md-6">
     <h2>All Info</h2>
     <!-- <ul class="list-group">
@@ -26,7 +27,7 @@
     </ag-grid-angular>  -->
   </div>
 
-  <div class="row">
+  <!-- <div class="row">
     <div class="column" style="background-color: whitesmoke;">
       NAME
     </div>
@@ -42,4 +43,6 @@
   <div class="column" style="background-color:rgb(219, 210, 210);">
     {{i.phone}}
   </div>
-</div>
+</div> -->
+
+<ag-grid-angular style="width: 80%;height: 208px; font-size: large;;" class="ag-theme-balham" [rowData]="rowData | async" [columnDefs]="columnDefs" [gridOptions]="gridOptions"></ag-grid-angular>

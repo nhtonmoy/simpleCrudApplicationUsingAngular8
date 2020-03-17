@@ -14,6 +14,7 @@ import { FormsModule } from '@angular/forms';
 import { ShowComponent } from './show/show.component';
 
 import { AgGridModule } from 'ag-grid-angular';
+import { CrudService } from './services/crud.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -26,9 +27,9 @@ import { AgGridModule } from 'ag-grid-angular';
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
-    AgGridModule.withComponents(null)
+    AgGridModule.withComponents([])
   ],
-  providers: [EmployeeService],
+  providers: [EmployeeService, CrudService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
